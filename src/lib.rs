@@ -7,6 +7,7 @@
 pub mod backend;
 pub mod program;
 pub mod shell;
+pub mod shell_program;
 
 pub use backend::ChromeBackend;
 pub use program::{check_program, ChromeProgram, ProgramError};

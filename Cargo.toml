@@ -1,6 +1,6 @@
 [package]
 name = "orbital-shell-chrome"
-version = "0.1.0"
+version = "18.0.0"
 edition = "2021"
 license = "BUSL-1.1"
 description = "Chrome extension (Manifest V3) shell for the Orbital compiler: bundles the resolved program for an in-worker runtime host"

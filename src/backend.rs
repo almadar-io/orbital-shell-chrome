@@ -145,7 +145,7 @@ impl Backend for ChromeBackend {
     fn generate(&self, module: &OirModule) -> GeneratedOutput {
         let mut output = GeneratedOutput::default();
         match &self.resolved_schema {
-            Some(schema) => match serde_json::to_string_pretty(schema) {
+            Some(schema) => match orbital_core::util::canonical_json::to_canonical_string_pretty(schema) {
                 Ok(json) => output.files.push(GeneratedFile::new("program.json", json)),
                 Err(e) => output
                     .warnings
