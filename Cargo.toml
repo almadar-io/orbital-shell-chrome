@@ -1,0 +1,12 @@
+[package]
+name = "orbital-shell-chrome"
+version = "0.1.0"
+edition = "2021"
+license = "BUSL-1.1"
+description = "Chrome extension (Manifest V3) shell for the Orbital compiler: bundles the resolved program for an in-worker runtime host"
+
+[dependencies]
+orbital-core = { git = "https://github.com/almadar-io/orbital-core", branch = "main" }
+orbital-shell-typescript = { git = "https://github.com/almadar-io/orbital-shell-typescript", branch = "main" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

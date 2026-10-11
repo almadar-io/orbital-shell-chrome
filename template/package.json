@@ -1,0 +1,38 @@
+{
+  "name": "almadar-chrome-extension",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && vite build --config vite.content.config.ts && node scripts/finalize.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@almadar/core": "^10.116.0",
+    "@almadar/integrations": "^2.45.0",
+    "@almadar/runtime": "^6.102.0",
+    "@almadar/ui": "^6.54.0",
+    "@huggingface/transformers": "3.8.1",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.0.0",
+    "@react-three/postprocessing": "^3.0.0",
+    "@tanstack/react-query": "^5.0.0",
+    "onnxruntime-web": "1.22.0-dev.20250409-89f8206ba4",
+    "postprocessing": "^6.39.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.0",
+    "vite": "^5.2.0"
+  }
+}

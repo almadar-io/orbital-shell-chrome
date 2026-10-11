@@ -1,0 +1,12 @@
+# The extension is its own project. esbuild's install script fetches the bundler binary vite needs;
+# the other two are transitive packages whose scripts the extension does not need.
+packages: []
+allowBuilds:
+  esbuild: true
+  '@firebase/util': false
+  protobufjs: false
+onlyBuiltDependencies:
+  - esbuild
+# First-party packages ship in step with the compiler that emitted this project.
+minimumReleaseAgeExclude:
+  - '@almadar/*'
